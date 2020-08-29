@@ -1,0 +1,37 @@
+.container{
+    background-color: rgba(86, 0, 112, 0.801);
+    display: block;
+    padding:3%;
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.container .form-group input {
+   display: block;
+   width:100%;
+   padding: 12px 22px;
+   margin: 5px 0;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 3px solid #ccc;
+   transition: 0.5s;
+   
+}
+
+.container .form-group input[type=text]:focus{
+    border: 5px solid green
+}
+
+button{
+  
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 8px 28px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}

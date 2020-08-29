@@ -1,0 +1,67 @@
+<br><br>
+<br><br>
+<br>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale =1.0,
+    user-scalable=no">
+</head>
+
+
+        <div class="panel-body1">
+            <form>
+                <div class="form-group">
+                    <input type="search" name="search" [(ngModel)]="search" class="form-control" id="search"
+                        placeholder="Enter UserName to search other on Git.." required>
+                </div>
+        
+                <button type="submit" (click)="searchUser()">Search</button>
+            </form>
+        
+            <br>
+        
+        
+            <!-- <div class="aa" style="display:inline-block"></div>
+        <label for="search" class="sr-only" placeholder="Search for other Git Users.."></label> -->
+            <!-- <input type="text" id="search" class="form-control" [(ngModel)]="search" placeholder="Search for other Git Users..">
+        <button>
+        <div (click)="searchUser()">Search</div>
+        </button> -->
+        
+        
+            <div *ngIf="searchFlag == true">
+                <img src="{{searchedUser.avatar_url}}" width="200" height="200">
+                <p>UserName: {{searchedUser.login}}</p>
+        
+                <button>
+                    <a href={{searchedUser.html_url}} alt='view-profile' target="_blank">View Profile</a>
+                </button>
+            </div>
+
+<br>
+
+<!-- user searchedData -->
+<!-- <div *ngIf="searchedUser.html_url!=null">
+    <img src="{{searchedUser.avatar_url}}" width="500" height="500">
+    <p>{{searchedUser.login}}</p>
+    <button class="button" >View Profile
+        <a href={{searchedUser.html_url}} alt='view-profile'></a>
+    </button>
+</div>  -->
+
+<div class="panel-body">
+    <div class="row">
+        <h3>Your Current Profile</h3>
+        <p>UserName : {{final_data.login}}</p>
+        <p>Company : {{final_data.company}}</p>
+        <p>BioData: {{final_data.bio}}</p>
+        <p>Followers: {{final_data.followers}}</p>
+        <p>Repos_Url: <a href="https://api.github.com/users/akmahato007/repos"
+                target="_blank">{{final_data.repos_url}}</a></p>
+        <p>Public_Repos: {{final_data.public_repos}}</p>
+    </div>
+</div>
+
+<div class="panel-body3">
+    <button (click)="logout()">Logout</button>
+</div>

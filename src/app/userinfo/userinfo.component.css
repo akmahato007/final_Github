@@ -1,0 +1,123 @@
+/* .picture{
+    background: url('https://img.icons8.com/dotty/40/000000/search-bar.png') no-repeat;
+    width:50px;
+    height:50px;
+    display: inline-block;
+    position: relative;
+    top:25px;
+} */
+
+:root{
+    font-size:16px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width:768px){
+
+    .panel-body{
+        font-size:2rem;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:480px){
+
+    .panel-body .row{
+        font-size:1rem;
+    }
+    .panel-body .row p{
+        font-size:.7rem;
+    }
+}
+
+@media screen and (max-width:300px){
+
+    .panel-body .row{
+        font-size: 1rem;
+    }
+    .panel-body .row p{
+        font-size: .7rem;
+    }
+}
+
+
+.panel-body{
+    background-color: rgba(214, 77, 191, 0.801);
+    border:1px solid black;
+    background-size: contain;
+    
+    width: 90%;
+    position: relative;
+    margin:0 auto;
+    
+    display: block;
+    padding:1vw;
+    color:black;
+    font-weight: bold; 
+}
+
+.panel-body h3{
+    background-color: lightgrey;
+    color: blue;
+    display: inline-block;
+    padding: .41rem;
+}
+
+.panel-body p{
+    color:black;
+    display: block;
+    font-size:1rem;     
+}
+
+.panel-body1{
+    background-color: rgba(86, 153, 216, 0.801);
+    border:1px solid black;
+    background-size: contain;
+    
+    width: 90%;
+    position: relative;
+    margin:0 auto;
+    
+    display: block;
+    padding:2vw;
+    color:black;
+    font-weight: bold; 
+}
+
+.panel-body1 input{
+   display: block;
+   width:100%;
+   padding: 1rem 2rem;
+   margin: 5px 0;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 3px solid #ccc;
+   transition: 0.5s;
+}
+
+.panel-body3{
+    background-color: rgba(86, 153, 216, 0.801);
+    border:1px solid black;
+    background-size: contain;
+    
+    width: 90%;
+    position: relative;
+    margin:0 auto;
+    
+    display: block;
+    padding:1vw;
+    color:black;
+    font-weight: bold; 
+}
+
+button{
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 8px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
